@@ -54,3 +54,5 @@ source snippets.sh
 # Example: view getUserBalance "$(./encode.sh erd1...)"
 
 ######################## START ########################
+SC_ADDRESS=erd1qqqqqqqqqqqqqpgqyq9mwxkq7zelkupafta5ah95pw6362j745qsk5mdzw
+view getSwapRouterAddress

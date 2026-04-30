@@ -1,12 +1,21 @@
 {
     "buildInfo": {
+        "rustc": {
+            "version": "1.92.0",
+            "commitHash": "ded5c06cf21d2b93bffd5d884aa6e96934ee4234",
+            "commitDate": "2025-12-08",
+            "channel": "Stable",
+            "host": "x86_64-unknown-linux-gnu",
+            "short": "rustc 1.92.0 (ded5c06cf 2025-12-08)",
+            "llvmVersion": "21.1"
+        },
         "contractCrate": {
             "name": "template",
             "version": "0.0.1"
         },
         "framework": {
             "name": "multiversx-sc",
-            "version": "0.64.0"
+            "version": "0.65.1"
         }
     },
     "name": "Template",
@@ -21,6 +30,7 @@
     "endpoints": [
         {
             "name": "addAdmins",
+            "rustMethodName": "add_admin",
             "onlyOwner": true,
             "mutability": "mutable",
             "inputs": [
@@ -34,6 +44,7 @@
         },
         {
             "name": "removeAdmins",
+            "rustMethodName": "remove_admin",
             "onlyOwner": true,
             "mutability": "mutable",
             "inputs": [
@@ -47,6 +58,7 @@
         },
         {
             "name": "isAdmin",
+            "rustMethodName": "is_admin",
             "mutability": "readonly",
             "inputs": [
                 {
@@ -62,6 +74,7 @@
         },
         {
             "name": "getAdmins",
+            "rustMethodName": "admins",
             "mutability": "readonly",
             "inputs": [],
             "outputs": [
@@ -85,6 +98,7 @@
         },
         {
             "name": "isPaused",
+            "rustMethodName": "is_paused",
             "mutability": "readonly",
             "inputs": [],
             "outputs": [

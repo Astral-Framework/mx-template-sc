@@ -1,0 +1,2 @@
+[[proxy]]
+path = "output/template_proxy.rs"
